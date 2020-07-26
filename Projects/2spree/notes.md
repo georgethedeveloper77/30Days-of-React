@@ -1,0 +1,2 @@
+## Available 
+ {/*//ColorZilla*/} Chrome extension
