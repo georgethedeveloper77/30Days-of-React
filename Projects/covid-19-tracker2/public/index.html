@@ -1,82 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="spree-e58b7.web.app" />
-    <meta charset="utf-8" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="content-width" href="%PUBLIC_URL%/content-width.js" />
-    <link rel="icon" href="%PUBLIC_URL%/icon.png" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=0.80, maximum-scale=2.0, user-scalable=no,minimum-scale=0.80, shrink-to-fit=yes"
-    />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      http-equiv="origin-trial"
-      content="Ar/3+C6Z9mgLRytJxDOvr20zHtYaIAcLSgBcQBUq74fqmgY8Rr73uOe5i/3LEdMn+ewadLrBSA/mDjXkDq/NkgsAAABpeyJvcmlnaW4iOiJodHRwczovL3NwcmVlLWU1OGI3LndlYi5hcHA6NDQzIiwiZmVhdHVyZSI6IkJhZGdpbmdWMiIsImV4cGlyeSI6MTYwMDIxNDM5Oservice-workeriaXNTdWJkb21haW4iOnRydWV9"
-    />
 
-    <meta
-      http-equiv="origin-trial"
-      content="Aj6dJl/CQmE1k1vOyUeR0YKlSNCw0eiDnc+ugHtUqweD2CqYUevX5b9leFzLfXAGu9RR+pski09NqJmvU++R/Q0AAABWeyJvcmlnaW4iOiJodHRwczovL3NwcmVlLWU1OGI3LndlYi5hcHA6NDQzIiwiZmVhdHVyZSI6IkJhZGdpbmdWMiIsImV4cGlyeSI6MTYwMDIxNDM5OX0="
-    />
-    <meta
-      http-equiv="origin-trial"
-      content="Av9sOx1uKYLk9SCZudgPPUvGk/JNqdf/T1ZK0KS29Fm7K8SIH8iOUEvxaU24v1mE5j9Vff3zl+At1ATV46IicgkAAABteyJvcmlnaW4iOiJodHRwczovL3NwcmVlLWU1OGI3LndlYi5hcHA6NDQzIiwiZmVhdHVyZSI6Ik1lYXN1cmVNZW1vcnkiLCJleHBpcnkiOjE1OTA1MzMyNjIsImlzU3ViZG9tYWluIjp0cnVlfQ=="
-    />
+<head>
+  <link rel="preconnect" href="spree-e58b7.web.app" />
+  <meta charset="utf-8" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="content-width" href="%PUBLIC_URL%/content-width.js" />
+  <link rel="icon" href="%PUBLIC_URL%/icon.png" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=0.80, maximum-scale=2.0, user-scalable=no,minimum-scale=0.80, shrink-to-fit=yes" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="origin-trial"
+    content="Ar/3+C6Z9mgLRytJxDOvr20zHtYaIAcLSgBcQBUq74fqmgY8Rr73uOe5i/3LEdMn+ewadLrBSA/mDjXkDq/NkgsAAABpeyJvcmlnaW4iOiJodHRwczovL3NwcmVlLWU1OGI3LndlYi5hcHA6NDQzIiwiZmVhdHVyZSI6IkJhZGdpbmdWMiIsImV4cGlyeSI6MTYwMDIxNDM5Oservice-workeriaXNTdWJkb21haW4iOnRydWV9" />
 
-    <meta name="author" content="george.the.developer" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="A Social-Media Application" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon.png" />
-    <style>
-      #container {
-        height: 100%;
-      }
-    </style>
+  <meta http-equiv="origin-trial"
+    content="Aj6dJl/CQmE1k1vOyUeR0YKlSNCw0eiDnc+ugHtUqweD2CqYUevX5b9leFzLfXAGu9RR+pski09NqJmvU++R/Q0AAABWeyJvcmlnaW4iOiJodHRwczovL3NwcmVlLWU1OGI3LndlYi5hcHA6NDQzIiwiZmVhdHVyZSI6IkJhZGdpbmdWMiIsImV4cGlyeSI6MTYwMDIxNDM5OX0=" />
+  <meta http-equiv="origin-trial"
+    content="Av9sOx1uKYLk9SCZudgPPUvGk/JNqdf/T1ZK0KS29Fm7K8SIH8iOUEvxaU24v1mE5j9Vff3zl+At1ATV46IicgkAAABteyJvcmlnaW4iOiJodHRwczovL3NwcmVlLWU1OGI3LndlYi5hcHA6NDQzIiwiZmVhdHVyZSI6Ik1lYXN1cmVNZW1vcnkiLCJleHBpcnkiOjE1OTA1MzMyNjIsImlzU3ViZG9tYWluIjp0cnVlfQ==" />
 
-    <title>Spree</title>
-  </head>
+  <meta name="author" content="george.the.developer" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="A Social-Media Application" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon.png" />
+  <style>
+    #container {
+      height: 100%;
+    }
+  </style>
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <title>Coronavirus Tracker</title>
+</head>
 
-    <!--Service registry-->
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("service-worker.js").then(function () {
-          console.log("Service Worker Registered");
-        });
-      }
-    </script>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+  <!--Service registry-->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js").then(function () {
+        console.log("Service Worker Registered");
+      });
+    }
+  </script>
 
-    <footer>
-      <br />
-      <button
-        type="submit"
-        class="button xlarge circle teal"
-        onClick="window.location.href=window.location.href"
-      >
-        +
-    </button>      
-      <button
-        type="submit"
-        onClick="window.location.href=window.location.href"
-        class="w3-button w3-circle w3-black"
-      >
-        +
-      </button>
-      <br />
-      <p>
-        <a href="/src/pages/login.js/"
-          ><em><h6>©george.the.developer</h6></em></a
-        >
-      </p>
-    </footer>
-  </body>
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
+
+  <footer>
+    <p>
+      <a href="/src/pages/login.js/"><em>
+          <h6>©george.the.developer</h6>
+        </em></a>
+    </p>
+  </footer>
+</body>
+
 </html>

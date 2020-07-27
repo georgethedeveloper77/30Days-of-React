@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { MenuItem, FormControl, Select } from "@material-ui/core";
+import { MenuItem, FormControl, Select, Card, CardContent } from "@material-ui/core";
+import InfoBox from "./InfoBox";
 import "./App.css";
+import Map from "./Map";
 
 function App() {
   //useState = set variable
@@ -34,30 +36,33 @@ function App() {
 
   return (
     <div className="app">
-      <div className="app_header">
-        <FormControl className="app_dropdown">
-          <Select variant="outlined" onChange={onCountryChange} value={country}>
-            <MenuItem value="worldwide">Global</MenuItem>
-            {countries.map((country) => (
-              <MenuItem value={country.value}>{country.name}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
+      <div className="app_left">
+        <div className="app_header">
+          <FormControl className="app_dropdown">
+            <Select
+              variant="outlined"
+              onChange={onCountryChange}
+              value={country}
+            >
+              <MenuItem value="worldwide">Global</MenuItem>
+              {countries.map((country) => (
+                <MenuItem value={country.value}>{country.name}</MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </div>
+
+        <div className="app_stats"></div>
+        <InfoBox title="Coronavirus Cases" cases={} total={} />
+        <InfoBox title="Recovered" cases={} total={} />
+        <InfoBox title="Deaths" cases={} total={} />
+        <Map />
       </div>
+      <Card className="app_right">
+        <CardContent>
 
-      <div className="app_stats">
-
-      </div>
-
-
-      {/* InfoBoxs*/}
-      {/* InfoBoxs*/}
-      {/* InfoBoxs*/}
-
-      {/* Table*/}
-      {/* Graps*/}
-
-      {/* InfoBoxs*/}
+        </CardContent>
+      </Card>
     </div>
   );
 }
