@@ -5,11 +5,13 @@ import {
   Select,
   Card,
   CardContent,
-  Table,
+  //Table,
 } from "@material-ui/core";
 import InfoBox from "./InfoBox";
 import "./App.css";
 import Map from "./Map";
+import Table from "./Table";
+import { sortData } from "./utils";
 
 function App() {
   //useState = set variable
@@ -40,7 +42,8 @@ function App() {
             value: country.countryInfo.iso2,
           }));
 
-          setTableData(data);
+          const sortedData = sortData(data);
+          setTableData(sortedData);
           setCountries(countries);
         });
     };
@@ -100,7 +103,7 @@ function App() {
       </div>
       <Card className="app_right">
         <CardContent>
-          <Table countries={tableData}/>
+          <Table countries={tableData} />
         </CardContent>
       </Card>
     </div>
