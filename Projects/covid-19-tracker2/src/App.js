@@ -12,6 +12,7 @@ import "./App.css";
 import Map from "./Map";
 import Table from "./Table";
 import { sortData } from "./utils";
+import LineGraph from "./LineGraph"
 
 function App() {
   //useState = set variable
@@ -104,6 +105,7 @@ function App() {
       <Card className="app_right">
         <CardContent>
           <Table countries={tableData} />
+          <LineGraph/>
         </CardContent>
       </Card>
     </div>
