@@ -12,7 +12,8 @@ import "./App.css";
 import Map from "./Map";
 import Table from "./Table";
 import { sortData } from "./utils";
-import LineGraph from "./LineGraph"
+import LineGraph from "./LineGraph";
+import "leaflet/dist/leaflet.css"
 
 function App() {
   //useState = set variable
@@ -104,8 +105,10 @@ function App() {
       </div>
       <Card className="app_right">
         <CardContent>
+          <h3>Live Cases by Country</h3>
           <Table countries={tableData} />
-          <LineGraph/>
+          <h3>Worldwide new Cases</h3>
+          <LineGraph />
         </CardContent>
       </Card>
     </div>
