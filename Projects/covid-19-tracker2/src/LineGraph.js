@@ -46,13 +46,13 @@ const options = {
   },
 };
 
-const buildChartData = (data, casesType = "cases") => {
-  const chartData = [];
+const buildChartData = (data, casesType) => {
+  let chartData = [];
   let lastDataPoint;
   // data[casesType].forEach((date) => {
   for (let date in data.cases) {
     if (lastDataPoint) {
-      const newDataPoint = {
+      let newDataPoint = {
         x: date,
         y: data[casesType][date] - lastDataPoint,
       };
@@ -69,26 +69,29 @@ function LineGraph({ casesType = "cases", ...props }) {
   useEffect(() => {
     const fetchData = async () => {
       await fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=120")
-        .then((response) => response.json())
+        .then((response) => {
+          return response.json();
+        })
         .then((data) => {
-          let chartData = buildChartData(data, "casesType");
+          let chartData = buildChartData(data, casesType);
           setData(chartData);
         });
     };
+
     fetchData();
   }, [casesType]);
 
   return (
     <div className={props.className}>
-      {data?.lenth > 0 && ( //option chaining => checks if data exists
+      {data?.length > 0 && ( //option chaining => checks if data exists
         <Line
           options={options}
           data={{
             datasets: [
               {
-                data: data,
                 backgroundColor: "rgba(204, 16, 52, 0.5)",
                 borderColor: "#CC1034",
+                data: data,
               },
             ],
           }}
