@@ -70,7 +70,7 @@ function App() {
         setCountry(countryCode);
         setCountryInfo(data);
 
-        setMapCenter([data.countryInfo.lat, data.countryInfo.lng]);
+        setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
         setMapZoom(4);
       });
   };
@@ -119,7 +119,6 @@ function App() {
           total={prettyPrintStat(countryInfo.deaths)}
         />
         <Map
-          // active={casesType === "cases"}
           casesType={casesType}
           countries={mapCountries}
           center={mapCenter}

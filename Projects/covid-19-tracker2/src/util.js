@@ -23,30 +23,20 @@ export const sortData = (data) => {
   return sortedData.sort((a, b) => (a.cases > b.cases ? -1 : 1));
 };
 
-//   sortedData.sort((a, b) => {
-//     if (a.cases > b.cases) {
-//       return -1
-//     } else {
-//       return 1
-//     }
-//   });
-//   return sortedData;
-// };
-
 export const prettyPrintStat = (stat) =>
   stat ? `+${numeral(stat).format("0.0a")}` : "+0";
 
 // Draw circle interactive tooltips on map
-export const showDataOnMap = (data, casesType = "cases") => (
+export const showDataOnMap = (data, casesType = "cases") =>
   data.map((country) => (
     <Circle
-      center={[country.countryInfo.lat, country.countryInfo.long]}
+      center={[country.countryInfo.lat, country.countryInfo.long]} //long
       fillOpacity={0.4}
       color={casesTypeColors[casesType].hex}
       fillColor={casesTypeColors[casesType].hex}
-      radius={Math.sqrt(
-        country[casesType] * casesTypeColors[casesType].multiplier
-      )}
+      radius={
+        Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier
+      }
     >
       <Popup>
         <div className="info-container">
@@ -67,5 +57,4 @@ export const showDataOnMap = (data, casesType = "cases") => (
         </div>
       </Popup>
     </Circle>
-  ))
-);
+  ));
