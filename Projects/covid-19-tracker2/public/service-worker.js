@@ -1,6 +1,6 @@
 /* eslint-disable array-callback-return */
 /* eslint-disable no-restricted-globals */
-var cacheName = "spree";
+var cacheName = "coronavirus tracker";
 
 var filesToCache = [
   "./content-width.js",
@@ -71,7 +71,7 @@ self.addEventListener("fetch", function (event) {
 
 Notification.requestPermission((result) => {
   if (result === "granted") {
-    showNotification("Spree Spree!", "Hey there!");
+    showNotification("");
   }
 });
 

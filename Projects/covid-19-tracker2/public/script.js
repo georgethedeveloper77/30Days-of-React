@@ -26,7 +26,7 @@ if (window.location.protocol === 'http:') {
 
 Notification.requestPermission((result) => {
   if (result === "granted") {
-    showNotification("Spree Spree!", "Hey there!");
+    showNotification("");
   }
 });
 
