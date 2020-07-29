@@ -14,9 +14,10 @@
 
 .infoBox--red {
   border-color: red;
+  border-bottom-color: red ;
 }
 
-.infoBox--cases--green {
+.infoBox_cases--green {
   color: lightgreen !important;
 }
 
@@ -33,7 +34,7 @@
 
 .infoBox_total {
   color: #6c757d;
-  font-weight: 800 !important;
-  font-size: 1.2rem !important;
+  font-weight: 900 !important;
+  font-size: 1.3rem !important;
   margin-bottom: 15px !important;
 }

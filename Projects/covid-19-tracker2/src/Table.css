@@ -14,6 +14,6 @@
   padding: 0.5rem;
 }
 
-.tabel tr:nth-of-type(odd) {
+.table tr:nth-of-type(odd) {
   background-color: #f3f2f8;
 }
