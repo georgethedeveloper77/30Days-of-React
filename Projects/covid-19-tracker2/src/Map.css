@@ -12,15 +12,15 @@
 }
 
 .info-flag img {
-  height: 80px;
-  width: 100px;
+  width: 80px;
+  border-radius: 5px;
 }
 
 .info-flag {
   height: 80px;
   width: 100px;
   background-color: cover;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .info-name {
@@ -29,16 +29,8 @@
   color: #555;
 }
 
-.info-confirmed {
-  font-size: 16px;
-  margin-top: 5px;
-}
-
-.info-recovered {
-  font-size: 16px;
-  margin-top: 5px;
-}
-
+.info-confirmed,
+.info-recovered
 .info-deaths {
   font-size: 16px;
   margin-top: 5px;

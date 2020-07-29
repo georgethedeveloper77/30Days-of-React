@@ -36,9 +36,8 @@ function App() {
       });
   }, []);
 
-  //runs once when componet loads
+  //runs once when componet loads...async => send a request
   useEffect(() => {
-    // async => send a request
     const getCountriesData = async () => {
       await fetch("https://disease.sh/v3/covid-19/countries")
         .then((response) => response.json())

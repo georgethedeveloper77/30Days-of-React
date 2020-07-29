@@ -6,7 +6,7 @@ function InfoBox({ title, cases, isRed, active, total, ...props }) {
   return (
     <Card
       onClick={props.onClick}
-      className={`InfoBox ${active && "infoBox--selected"}${
+      className={`infoBox ${active && "infoBox--selected"}${ //string interpulation
         isRed && "infoBox--red"
       }`}
     >
