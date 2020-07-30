@@ -17,7 +17,7 @@ body {
   font-size: 2rem;
 }
 .app_dropdown {
-  background-color: lightgrey;
+  background-color: white;
 }
 .app_header {
   display: flex;
