@@ -15,6 +15,8 @@ import { sortData, prettyPrintStat } from "./util";
 import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css"; //map
 
+import image from './images/image.png';
+
 function App() {
   //useState = set variable
   //useEffect = run a piece of code base on given condition
@@ -79,7 +81,8 @@ function App() {
     <div className="app">
       <div className="app_left">
         <div className="app_header">
-          <h1>Covid-19</h1><h2>TRACKER</h2>
+        <img className={"image"} src={image} alt="COVID-19" />
+          <h1>Covid-19 Tracker</h1>
           <FormControl className="app_dropdown">
             <Select
               variant="outlined"
@@ -99,14 +102,14 @@ function App() {
           isRed
           active={casesType === "cases"}
           onClick={(e) => setCasesType("cases")}
-          title="Coronavirus Cases"
+          title="Coronavirus Cases Today"
           cases={prettyPrintStat(countryInfo.todayCases)}
           total={prettyPrintStat(countryInfo.cases)}
         />
         <InfoBox
           active={casesType === "recovered"}
           onClick={(e) => setCasesType("recovered")}
-          title="Recovered"
+          title="Recovered Today"
           cases={prettyPrintStat(countryInfo.todayRecovered)}
           total={prettyPrintStat(countryInfo.recovered)}
         />
@@ -114,7 +117,7 @@ function App() {
           isRed
           active={casesType === "deaths"}
           onClick={(e) => setCasesType("deaths")}
-          title="Deaths"
+          title="Deaths Today"
           cases={prettyPrintStat(countryInfo.todayDeaths)}
           total={prettyPrintStat(countryInfo.deaths)}
         />
