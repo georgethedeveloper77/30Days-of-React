@@ -15,7 +15,7 @@ import { sortData, prettyPrintStat } from "./util";
 import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css"; //map
 
-import image from './images/image.png';
+import image from "./images/image.png";
 
 function App() {
   //useState = set variable
@@ -81,8 +81,7 @@ function App() {
     <div className="app">
       <div className="app_left">
         <div className="app_header">
-        <img className={"image"} src={image} alt="COVID-19" />
-          <h1>Covid-19 Tracker</h1>
+          <img className={"image"} src={image} alt="COVID-19" />
           <FormControl className="app_dropdown">
             <Select
               variant="outlined"
