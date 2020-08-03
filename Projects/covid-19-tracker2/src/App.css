@@ -11,6 +11,9 @@ body {
   justify-content: space-evenly;
   padding: 20px;
 }
+.app__h {
+  color: red
+}
 
 .app_header > h1 {
   color: red;
@@ -49,7 +52,10 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-
+.app__table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .app_stats {
   display: flex;
   justify-content: space-between;
@@ -62,24 +68,37 @@ body {
 
 @media only screen and (max-width: 770px) {
   .app {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 20px;
+  }
+  .app_graph {
+    flex-grow: 1;
   }
 
 
   .image {
-    width: 60%;
+    width: 50%;
     margin-top: 50px;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 990px) {
   .app {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 20px;
+  }
+  .app_graph {
+    flex-grow: 1;
   }
   .image {
-    width: 60%;
+    width: 50%;
     margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
   }
 }
