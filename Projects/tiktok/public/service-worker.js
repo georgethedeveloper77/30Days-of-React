@@ -6,7 +6,8 @@ var filesToCache = [
   "./content-width.js",
   "./script.js",
   "./robots.txt",
-  "./icon.png",
+  "./logo192.png",
+  "./logo512.png",
 ];
 
 self.addEventListener("install", (event) => {
