@@ -100,6 +100,29 @@ eateOrder
 ? Provide the AWS Lambda function name: createOrder
 ? Choose the runtime that you want to use: NodeJS
 ? Choose the function template that you want to use: Hello World
-8. # 
-9. # 
+8. # Pipeline reserver
+   # amplify add api
+? Please select from one of the below mentioned services: GraphQL
+? Provide API name: smartbooks
+? Choose the default authorization type for the API Amazon Cognito User Pool
+Use a Cognito user pool configured as a part of this project.
+? Do you want to configure advanced settings for the GraphQL API Yes, I want to make some additional c
+hanges.
+? Configure additional auth types? Yes
+? Choose the additional authorization types you want to configure for the API API key
+API key configuration
+? Enter a description for the API key: Guest user access to books
+? After how many days from now the API key should expire (1-365): 365
+? Configure conflict detection? No
+? Do you have an annotated GraphQL schema? No
+? Do you want a guided schema creation? Yes
+? What best describes your project: Single object with fields (e.g., “Todo” with ID, name, description
+)
+? Do you want to edit the schema now? Yes
+Please edit the file in your editor: /home/ras/Documents/PROJECTS/REACT P/30Days/Projects/books/amplify/backend/api/smartbooks/schema.graphql
+? Press enter to continue 
+
+GraphQL schema compiled successfully.
+9.  # amplify push => create cloud resources
+                      userpool, s3 bucket, AppSync Api, DynamoDB Tables, Lambda functions
 10. # 
