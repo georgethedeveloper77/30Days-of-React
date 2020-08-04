@@ -125,4 +125,7 @@ Please edit the file in your editor: /home/ras/Documents/PROJECTS/REACT P/30Days
 GraphQL schema compiled successfully.
 9.  # amplify push => create cloud resources
                       userpool, s3 bucket, AppSync Api, DynamoDB Tables, Lambda functions
+                      USER_POOL_ID = aws-export.js
+                      DynamoDB=> table..
+                      
 10. # 
