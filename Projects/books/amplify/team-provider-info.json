@@ -1,0 +1,20 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-smartbooks-prod-160818-authRole",
+            "UnauthRoleArn": "arn:aws:iam::109898474697:role/amplify-smartbooks-prod-160818-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::109898474697:role/amplify-smartbooks-prod-160818-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-smartbooks-prod-160818-deployment",
+            "UnauthRoleName": "amplify-smartbooks-prod-160818-unauthRole",
+            "StackName": "amplify-smartbooks-prod-160818",
+            "StackId": "arn:aws:cloudformation:us-east-2:109898474697:stack/amplify-smartbooks-prod-160818/98d2c180-d653-11ea-b016-066f8b7a8772",
+            "AmplifyAppId": "d3mwxxtiuxwdnj"
+        },
+        "categories": {
+            "auth": {
+                "smartbooks06334e31": {}
+            }
+        }
+    }
+}

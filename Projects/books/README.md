@@ -62,3 +62,44 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
 ? Do you want to use an AWS profile? Yes
 ? Please choose the profile you want to use georgethedeveloper77
+
+
+# amplify add auth
+Using service: Cognito, provided by: awscloudformation
+ The current configured provider is Amazon Cognito.
+ Do you want to use the default authentication and security configuration? Default configuration
+ Warning: you will not be able to edit these selections.
+ How do you want users to be able to sign in? Username
+ Do you want to configure advanced settings? No, I am done.
+
+5. # amplify add storage
+? Please select from one of the below mentioned services: Content (Images, audio, video, etc.)
+? Please provide a friendly name for your resource that will be used to label this category in the pro
+ject: BookImages
+? Please provide bucket name: smartbooksd676574327a14bd69ae685af0d87f43f
+? Who should have access: Auth and guest users
+? What kind of access do you want for Authenticated users? create/update, read, delete
+? What kind of access do you want for Guest users? read
+? Do you want to add a Lambda Trigger for your S3 Bucket? No
+
+6. # amplify add function
+? Select which capability you want to add: Lambda function (serverless function)
+? Provide a friendly name for your resource to be used as a label for this category in the project: pr
+ocessPayment
+? Provide the AWS Lambda function name: processPayment
+? Choose the runtime that you want to use: NodeJS
+? Choose the function template that you want to use: Hello World
+? Do you want to access other resources in this project from your Lambda function? No
+? Do you want to invoke this function on a recurring schedule? No
+? Do you want to configure Lambda layers for this function? No
+? Do you want to edit the local lambda function now? No
+7. #  amplify add function
+? Select which capability you want to add: Lambda function (serverless function)
+? Provide a friendly name for your resource to be used as a label for this category in the project: cr
+eateOrder
+? Provide the AWS Lambda function name: createOrder
+? Choose the runtime that you want to use: NodeJS
+? Choose the function template that you want to use: Hello World
+8. # 
+9. # 
+10. # 
