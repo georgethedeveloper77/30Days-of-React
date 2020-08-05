@@ -128,4 +128,5 @@ GraphQL schema compiled successfully.
                       USER_POOL_ID = aws-export.js
                       DynamoDB=> table..
                       
-10. # 
+10. # GraphQL
+11. always replaceed after update Mutations n Qqueris
